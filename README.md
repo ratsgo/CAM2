@@ -23,11 +23,13 @@ sh run.sh prepare
 sh run.sh train
 ```
 
-- 웹 데모 : 학습이 끝난 후 다음을 실행하면 단어별 점수를 로컬 웹페이지로 확인할 수 있습니다.
+- 웹 데모 : 학습이 끝난 후 다음을 실행하면 단어별 점수를 로컬 웹페이지(그림 참고)로 확인할 수 있습니다.
 
 ```bash
 sh run.sh web-demo
 ```
+
+<img src='http://drive.google.com/uc?export=view&id=1rGGxNzaU6443g8FaeJaIat_3Qa-ofeqW' /><br>
 
 - 파이썬 콘솔에서 CAM2 점수 뽑기 : get_scores 함수는 예측된 범주와 단어별 CAM2 스코어를 반환합니다. 아래처럼 실행하면 됩니다.
 
