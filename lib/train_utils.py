@@ -32,7 +32,7 @@ def get_batch(features, labels, batch_size, num_epochs, max_document_length):
 			batch_labels_raw = labels[start_index:end_index]
 			batch_labels = []
 			for batch_label_raw in batch_labels_raw:
-				if float(batch_label_raw) > 2.5:
+				if float(batch_label_raw) > 0.5:
 					batch_labels.append([1, 0])
 				else:
 					batch_labels.append([0, 1])
