@@ -23,7 +23,13 @@ sh run.sh prepare
 sh run.sh train
 ```
 
-- 테스트 (python console) : 학습이 끝나면 CAM2 점수를 확인할 수 있습니다. get_scores 함수는 예측된 범주와 단어별 CAM2 스코어를 반환합니다.
+- 웹 데모 : 학습이 끝난 후 다음을 실행하면 단어별 점수를 로컬 웹페이지로 확인할 수 있습니다.
+
+```bash
+sh run.sh web-demo
+```
+
+- 파이썬 콘솔에서 CAM2 점수 뽑기 : get_scores 함수는 예측된 범주와 단어별 CAM2 스코어를 반환합니다. 아래처럼 실행하면 됩니다.
 
 ```python
 from config import Config
@@ -31,10 +37,4 @@ from lib.predict_util import CAM2
 model = CAM2(Config())
 model.get_scores('재미있다')
 model.get_scores('재미없다')
-```
-
-- 웹 데모 : 다음을 실행하면 단어별 점수를 로컬 웹페이지로 확인할 수 있습니다.
-
-```bash
-sh run.sh web-demo
 ```
