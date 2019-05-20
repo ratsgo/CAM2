@@ -29,7 +29,7 @@ sh run.sh train
 sh run.sh web-demo
 ```
 
-<img src='http://drive.google.com/uc?export=view&id=1rGGxNzaU6443g8FaeJaIat_3Qa-ofeqW' /><br>
+<img src='http://drive.google.com/uc?export=view&id=1rGGxNzaU6443g8FaeJaIat_3Qa-ofeqW' width="500"><br>
 
 - 파이썬 콘솔에서 CAM2 점수 뽑기 : get_scores 함수는 예측된 범주와 단어별 CAM2 스코어를 반환합니다. 아래처럼 실행하면 됩니다.
 
