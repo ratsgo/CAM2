@@ -14,22 +14,29 @@
 
 ### 실행방법
 
+- clone repository
+
+```bash
+git clone https://github.com/ratsgo/CAM2.git
+cd CAM2
+```
+
 - 데이터 준비 : [네이버 영화 리뷰 코퍼스](https://github.com/e9t/nsmc)를 `data` 디렉토리에 다운로드합니다.
 
 ```bash
-sh run.sh prepare
+bash run.sh prepare
 ```
 
 - 데이터 전처리 및 Convolutional Neural Network 모델 학습
 
 ```bash
-sh run.sh train
+bash run.sh train
 ```
 
 - 웹 데모 : 학습이 끝난 후 다음을 실행하면 단어별 점수를 로컬 웹페이지(그림 참고)로 확인할 수 있습니다.
 
 ```bash
-sh run.sh web-demo
+bash run.sh web-demo
 ```
 
 <img src='http://drive.google.com/uc?export=view&id=1rGGxNzaU6443g8FaeJaIat_3Qa-ofeqW' width="500"><br>
