@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 COMMAND=$1
+export LANGUAGE=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 case $COMMAND in
     prepare)
