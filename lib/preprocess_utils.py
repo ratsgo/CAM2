@@ -23,6 +23,7 @@ class preprocessor:
         if not os.path.exists(self.config.tokenized_path):
             with open(self.config.data_path, "r", encoding="utf-8") as f1, \
                     open(self.config.tokenized_path, 'w', encoding='utf-8') as f2:
+                next(f1) # skip head line
                 for line in f1:
                     _, string, label = line.replace('\n', '').split('\t')
                     sentence = re.sub(self.config.pattern, " ", string)
