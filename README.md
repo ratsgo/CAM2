@@ -3,6 +3,9 @@
 
 [Sentiment classification with word localization based on weakly supervised learning with a convolutional neural network](https://www.sciencedirect.com/science/article/abs/pii/S0950705118301710)
 
+이 논문과 관련한 해설 자료는 [이곳](https://drive.google.com/open?id=1JOS8yqAnULXdEKCopJXh4Gp-BC6In7by)에서 확인할 수 있습니다.
+
+
 ### 요구사항
 
 - python3
