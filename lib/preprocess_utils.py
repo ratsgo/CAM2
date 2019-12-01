@@ -24,7 +24,7 @@ class preprocessor:
             with open(self.config.data_path, "r", encoding="utf-8") as f1, \
                     open(self.config.tokenized_path, 'w', encoding='utf-8') as f2:
                 for line in f1:
-                    string, label = line.replace('\n', '').split('\u241E')
+                    _, string, label = line.replace('\n', '').split('\t')
                     sentence = re.sub(self.config.pattern, " ", string)
                     tokens = self.tokenizer.morphs(sentence)
                     f2.writelines(' '.join(tokens) + '\u241E' + label + '\n')
